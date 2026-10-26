@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Happy Birthday girl ❤️</title>
+
+<style> * { margin: 0; padding: 0; box-sizing: border-box; } body { min-height: 100vh; background: linear-gradient(135deg, #190005, #800020, #ff1744); color: white; font-family: Georgia, serif; text-align: center; overflow-x: hidden; } .container { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 20px; } .card { width: 100%; max-width: 750px; padding: 30px 20px; background: rgba(40, 0, 10, 0.88); border: 2px solid pink; border-radius: 25px; box-shadow: 0 0 35px #ff1744; } h1 { color: #ffb6c1; font-size: clamp(30px, 7vw, 46px); margin: 20px 0; text-shadow: 0 0 15px red; } .roses { font-size: 32px; margin: 20px 0; } .start-btn { width: 145px; height: 145px; border-radius: 50%; border: 3px solid pink; background: #e60026; color: white; font-size: 25px; cursor: pointer; box-shadow: 0 0 30px red; animation: heartbeat 1.5s infinite; } .start-btn:hover { background: #ff1744; } #birthdayPage { display: none; animation: appear 2s ease; } .photo { width: 230px; height: 280px; object-fit: cover; border: 4px solid pink; border-radius: 20px; box-shadow: 0 0 30px red; margin: 20px auto; display: block; } .message { font-size: 19px; line-height: 2; color: #ffe4e8; margin: 25px auto; } .love { color: pink; font-size: 25px; margin: 25px 0; } .surprise-btn { padding: 14px 25px; border: 2px solid pink; border-radius: 30px; background: #e60026; color: white; font-size: 18px; cursor: pointer; } #extraMessage { display: none; color: pink; font-size: 23px; line-height: 1.8; margin-top: 25px; } .heart { position: fixed; bottom: -50px; pointer-events: none; animation: floatUp 7s linear forwards; z-index: 10; } @keyframes heartbeat { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.08); } } @keyframes appear { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } } @keyframes floatUp { 0% { transform: translateY(0) rotate(0deg); opacity: 0; } 15% { opacity: 1; } 100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; } } @media (max-width: 480px) { .message { font-size: 17px; } .photo { width: 190px; height: 240px; } } </style>
+
+</head>
+
+<body>
+
+<div class="container"> <div class="card">
+
+<!-- FIRST PAGE -->
+<div id="startPage">
+
+    <div class="roses">🌹 ❤️ 🌹</div>
+
+    <h1>A Special Surprise 💌</h1>
+
+    <p style="font-size:19px; line-height:1.8;">
+        Someone very special has a birthday today... 🎂<br>
+        I prepared something unique just for you. 💕<br>
+        Are you ready ya ba4a 
+    </p>
+
+    <br>
+
+    <button class="start-btn" onclick="startSurprise()">
+        ❤️<br>START
+    </button>
+
+    <div class="roses">🌹 🌹 🌹</div>
+
+    <p>Made with creativity , just for you  ya ba4a 💖</p>
+
+</div>
+
+<!-- BIRTHDAY PAGE -->
+<div id="birthdayPage">
+
+    <div class="roses">🌹 ❤️ 🌹</div>
+
+    <h1>Happy Birthday,ya pettyyy 🎂</h1>
+
+    <!-- Replace birthday-girl.jpg with the girl's picture filename -->
+    <img
+        src="c:\Users\judith\c++\.vscode\birthday-site\1793042029918.jpg"
+        alt="Birthday Girl"
+        class="photo"
+    >
+
+    <h2 style="color:pink; margin-top:20px;">
+        To a8ls wa7da fi donia 
+    </h2>
+
+    <div class="message">
+
+        Happy Birthday to the most beautiful girl in this world
+
+        <br><br>
+
+        Today is not just an ordinary day.
+        It is the day that the most beautiful girl came into this world.
+        Someone whose smile makes everything brighter
+        and whose presence makes life more beautiful. 🌹
+
+        <br><br>
+
+        I wish you a life full of happiness bgd ,
+        a heart full of love,
+        and a thousand reasons to smile every single day. 💕
+
+        <br><br>
+
+        If I could tell you a right something bgd ,
+        I would tell that your the most beautiful girl i have ever seen in this world.
+        And really i hope you to see yourself by my eyes
+        Then you would understand how precious,
+        wonderful, and beautiful you truly are. ❤️
+
+        <br><br>
+
+        May all your dreams come true bgd .
+        May every new day bring you something beautiful.
+        May you always find love in unexpected places
+        and happiness in the smallest moments. ✨
+
+        <br><br>
+
+        You deserve every thing in the world,
+        every beautiful star in the sky,
+        and every happy moment life has to offer. 🌹
+
+        <br><br>
+
+        I hope bgd this birthday becomes a memory
+        that makes you smile whenever you remember it.
+
+        <br><br>
+
+        Never forget how you are very very very special bgd .
+        Keep shining, keep smiling,
+        and never stop being the wonderful person in this world as you are .
+
+        <br><br>
+
+        <strong>Happy Birthday, girl 👑🎂</strong>
+
+
+    </div>
+
+    <div class="roses">🌹 ❤️ 🌹 ❤️ 🌹</div>
+
+    <div class="love">
+        Made with creativity , just for you ya ba4a
+    </div>
+
+    <button class="surprise-btn" onclick="showLove()">
+        One More thing for you 💝
+    </button>
+
+    <p id="extraMessage">
+        wa yarb yarb bgd a4ofik a7sn wa ashtr wa7da fi donia di kolha bgd <br>
+        May your smile never fade  🌹<br>
+        Happy Birthday! 💖
+    </p>
+
+</div>
+
+
+</div> </div>
+
+<script> function startSurprise() { document.getElementById("startPage").style.display = "none"; document.getElementById("birthdayPage").style.display = "block"; for (let i = 0; i < 35; i++) { setTimeout(createHeart, i * 180); } } function createHeart() { const birthdayPage = document.getElementById("birthdayPage"); if (birthdayPage.style.display !== "block") { return; } const heart = document.createElement("div"); heart.className = "heart"; const decorations = ["❤️", "💕", "💖", "🌹", "💗"]; heart.textContent = decorations[Math.floor(Math.random() * decorations.length)]; heart.style.left = Math.random() * 100 + "vw"; heart.style.fontSize = (18 + Math.random() * 22) + "px"; heart.style.animationDuration = (4 + Math.random() * 4) + "s"; document.body.appendChild(heart); setTimeout(() => heart.remove(), 8500); } setInterval(createHeart, 700); function showLove() { document.getElementById("extraMessage").style.display = "block"; } </script>
+
+</body> </html>
